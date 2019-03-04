@@ -5,9 +5,11 @@ import java.time.LocalDate;
 public class HomeworkApp {
 
     public static void main(String[] args) {
-        CarDoor car = new CarDoor(true, true);
+        CarDoor car = new CarDoor();
         car.closeDoor();
+        car.ifDoorIsClosedOrOpened();
         car.closeWindow();
+        car.ifWindowIsClosedOrOpened();
         System.out.println(car.toString());
         System.out.println();
 
