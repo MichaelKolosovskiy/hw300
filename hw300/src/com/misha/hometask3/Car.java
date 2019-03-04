@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Car {
 
-    private final LocalDate year;
+    private final LocalDate dateOfProduction;
     private String engineType;
     private int maxSpeed;
     private int acceleration;
@@ -16,15 +16,15 @@ public class Car {
     private ArrayList<CarWheel> carWheels = new ArrayList<>();
     private ArrayList<CarDoor> carDoors = new ArrayList<>();
 
-    public Car(LocalDate year) {
-        this.year = year;
+    public Car(LocalDate dateOfProduction) {
+        this.dateOfProduction = dateOfProduction;
         addDoors(4);
         addWheels(4);
     }
 
     public Car(String engineType, int maxSpeed, int acceleration,
-               int passengers, int passengersIn, int currentSpeed, LocalDate year) {
-        this(year);
+               int passengers, int passengersIn, int currentSpeed, LocalDate dateOfProduction) {
+        this(dateOfProduction);
         this.engineType = engineType;
         this.maxSpeed = maxSpeed;
         this.acceleration = acceleration;
@@ -127,7 +127,7 @@ public class Car {
     @Override
     public String toString() {
         return
-                "Year : " + this.year
+                "Year : " + this.dateOfProduction
                         + "\nEngine: " + this.engineType
                         + "\nSpeed: " + this.maxSpeed
                         + "\nAcceleration: " + this.acceleration
