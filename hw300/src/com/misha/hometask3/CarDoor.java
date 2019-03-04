@@ -6,7 +6,7 @@ public class CarDoor {
     private boolean carWindow;
 
     public CarDoor() {
-        
+
     }
 
     public CarDoor(boolean carDoor, boolean carWindow) {
@@ -31,11 +31,11 @@ public class CarDoor {
     }
 
     public boolean ifDoorIsClosedOrOpened() {
-        return (this.carDoor == false) ? true : false;
+        return this.carDoor = (this.carDoor == false) ? true : false;
     }
 
     public boolean ifWindowIsClosedOrOpened() {
-        return (this.carWindow == false) ? true : false;
+        return this.carWindow = (this.carWindow == false) ? true : false;
     }
 
     @Override
