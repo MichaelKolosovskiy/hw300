@@ -9,11 +9,25 @@ public class CarWheel {
     }
 
     public CarWheel(double amountOfTheWheel) {
-        this.amountOfTheWheel = amountOfTheWheel;
+        if (amountOfTheWheel > 1) {
+            this.amountOfTheWheel = 1;
+        }
+        if (amountOfTheWheel < 0) {
+            this.amountOfTheWheel = 0;
+        } else {
+            this.amountOfTheWheel = amountOfTheWheel;
+        }
     }
 
     public void tireWear(int percent) {
-        this.amountOfTheWheel = amountOfTheWheel - (0.01 * percent);
+        if (percent >= 100) {
+            percent = 100;
+        }
+        if (percent <= 0) {
+            percent = 0;
+        } else {
+            this.amountOfTheWheel = amountOfTheWheel - (0.01 * percent);
+        }
     }
 
     public double getStateOfTheWheel() {
