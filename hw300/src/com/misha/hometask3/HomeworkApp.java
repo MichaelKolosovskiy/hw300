@@ -24,7 +24,6 @@ public class HomeworkApp {
 
         car1.maxCurrentSpeed();
         car1.addOnePassenger();
-        //car1.onePassengerOff();
         car1.changeCurrentSpeed(76);
         System.out.println(car1.toString());
 
