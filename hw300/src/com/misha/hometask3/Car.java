@@ -22,7 +22,8 @@ public class Car {
         addWheels(4);
     }
 
-    public Car(String engineType, int maxSpeed, int acceleration, int passengers, int passengersIn, int currentSpeed, LocalDate year) {
+    public Car(String engineType, int maxSpeed, int acceleration,
+               int passengers, int passengersIn, int currentSpeed, LocalDate year) {
         this(year);
         this.engineType = engineType;
         this.maxSpeed = maxSpeed;
