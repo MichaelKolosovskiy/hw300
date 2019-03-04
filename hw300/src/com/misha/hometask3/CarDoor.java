@@ -6,8 +6,7 @@ public class CarDoor {
     private boolean carWindow;
 
     public CarDoor() {
-        this.carDoor;
-        this.carWindow;
+        
     }
 
     public CarDoor(boolean carDoor, boolean carWindow) {
