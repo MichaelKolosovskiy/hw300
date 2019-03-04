@@ -45,4 +45,3 @@ public class CarDoor {
                         + "\nIs the window open ? " + this.carWindow;
     }
 
-}
