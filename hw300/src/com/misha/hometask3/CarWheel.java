@@ -9,10 +9,9 @@ public class CarWheel {
     }
 
     public CarWheel(double amountOfTheWheel) {
-        if (amountOfTheWheel > 1) {
+        if (amountOfTheWheel >= 1) {
             this.amountOfTheWheel = 1;
-        }
-        if (amountOfTheWheel < 0) {
+        } else if (amountOfTheWheel < 0) {
             this.amountOfTheWheel = 0;
         } else {
             this.amountOfTheWheel = amountOfTheWheel;
@@ -20,11 +19,11 @@ public class CarWheel {
     }
 
     public void tireWear(int percent) {
-        if (percent >= 100) {
+        if (percent > 100) {
             percent = 100;
         }
-        if (percent <= 0) {
-            percent = 0;
+        if (percent < 0) {
+            this.amountOfTheWheel = 0;
         } else {
             this.amountOfTheWheel = amountOfTheWheel - (0.01 * percent);
         }
@@ -35,10 +34,11 @@ public class CarWheel {
     }
 
     public void changeCarWheelOrNot() {
-        if (this.amountOfTheWheel >= 0 && this.amountOfTheWheel <= 0.30) {
+        if (this.amountOfTheWheel >= 0 && this.amountOfTheWheel <= 0.30 || this.amountOfTheWheel < 0) {
             System.out.println("You need to change your wheels");
         } else {
             System.out.println("You don't need to change your wheels");
         }
     }
 }
+
