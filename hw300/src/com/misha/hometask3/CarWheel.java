@@ -33,11 +33,12 @@ public class CarWheel {
         return this.amountOfTheWheel;
     }
 
-    public void changeCarWheelOrNot() {
+    public boolean changeCarWheelOrNot() {
         if (this.amountOfTheWheel >= 0 && this.amountOfTheWheel <= 0.30 || this.amountOfTheWheel < 0) {
-            System.out.println("You need to change your wheels");
+            return true;
         } else {
-            System.out.println("You don't need to change your wheels");
+            return false;
         }
     }
 }
+
