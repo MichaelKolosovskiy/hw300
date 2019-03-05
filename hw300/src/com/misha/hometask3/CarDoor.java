@@ -31,11 +31,11 @@ public class CarDoor {
     }
 
     public boolean ifDoorIsClosedOrOpened() {
-        return this.carDoor = (this.carDoor == false) ? true : false;
+        return this.carDoor= (!this.carDoor) ? true : false;
     }
 
     public boolean ifWindowIsClosedOrOpened() {
-        return this.carWindow = (this.carWindow == false) ? true : false;
+        return this.carWindow = (!this.carWindow) ? true : false;
     }
 
     @Override
