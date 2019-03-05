@@ -13,8 +13,8 @@ public class HomeworkApp {
         System.out.println(car.toString());
         System.out.println();
 
-        CarWheel w = new CarWheel();
-        w.tireWear(1);
+        CarWheel w = new CarWheel(3);
+        w.tireWear(70);
         w.changeCarWheelOrNot();
         System.out.println();
 
