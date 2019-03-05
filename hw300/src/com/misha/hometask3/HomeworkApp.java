@@ -13,9 +13,9 @@ public class HomeworkApp {
         System.out.println(car.toString());
         System.out.println();
 
-        CarWheel w = new CarWheel(3);
-        w.tireWear(70);
-        w.changeCarWheelOrNot();
+        CarWheel w = new CarWheel(31);
+        w.tireWear(30);
+        System.out.println("Do I need to change tires? - " + w.changeCarWheelOrNot());
         System.out.println();
 
         Car car1 = new Car("Fuel", 300, 100, 4, 4, 123, LocalDate.now());
