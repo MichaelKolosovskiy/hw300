@@ -34,10 +34,7 @@ public class CarWheel {
     }
 
     public boolean changeCarWheelOrNot() {
-        if (this.amountOfTheWheel >= 0 && this.amountOfTheWheel <= 0.30 || this.amountOfTheWheel < 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return ((this.amountOfTheWheel >= 0 && this.amountOfTheWheel <= 0.30) || this.amountOfTheWheel < 0) ? true : false;
     }
+    
 }
