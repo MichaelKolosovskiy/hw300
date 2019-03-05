@@ -2,47 +2,47 @@ package com.misha.hometask3;
 
 public class CarDoor {
 
-    private boolean carDoor;
-    private boolean carWindow;
+    private boolean stateOfCarDoor;
+    private boolean stateOfCarWindow;
 
     public CarDoor() {
 
     }
 
-    public CarDoor(boolean carDoor, boolean carWindow) {
-        this.carDoor = carDoor;
-        this.carWindow = carWindow;
+    public CarDoor(boolean stateOfCarDoor, boolean stateOfCarWindow) {
+        this.stateOfCarDoor = stateOfCarDoor;
+        this.stateOfCarWindow = stateOfCarWindow;
     }
 
     public void openDoor() {
-        this.carDoor = true;
+        this.stateOfCarDoor = true;
     }
 
     public void closeDoor() {
-        this.carDoor = false;
+        this.stateOfCarDoor = false;
     }
 
     public void openWindow() {
-        this.carWindow = true;
+        this.stateOfCarWindow = true;
     }
 
     public void closeWindow() {
-        this.carWindow = false;
+        this.stateOfCarWindow = false;
     }
 
     public boolean ifDoorIsClosedOrOpened() {
-        return this.carDoor= (!this.carDoor) ? true : false;
+        return this.stateOfCarDoor = (!this.stateOfCarDoor) ? true : false;
     }
 
     public boolean ifWindowIsClosedOrOpened() {
-        return this.carWindow = (!this.carWindow) ? true : false;
+        return this.stateOfCarWindow = (!this.stateOfCarWindow) ? true : false;
     }
 
     @Override
     public String toString() {
         return
-                "Is the door open ? " + this.carDoor
-                        + "\nIs the window open ? " + this.carWindow;
+                "Is the door open ? " + this.stateOfCarDoor
+                        + "\nIs the window open ? " + this.stateOfCarWindow;
     }
 
 }
